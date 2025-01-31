@@ -18,7 +18,7 @@ const Main = () => {
 
       {activeComponent === "home" && <Home />}
       {activeComponent === "about" && <About />}
-      {activeComponent === "educatioon" && <Education />}
+      {activeComponent === "education" && <Education />}
       {activeComponent === "projects" && <Projects />}
       {activeComponent === "contact" && <Contact />}
     </div>

@@ -1,13 +1,30 @@
 "use client";
 import React from "react";
+import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import Tab from "./Tab";
 import Image from "next/image";
+const fadeInUp = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
+
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.3, delayChildren: 0.2 },
+  },
+};
 const Home = () => {
   return (
-    <div
-      className="flex flex-col justify-evenly items-center w-full mt-12 max-w-4xl h-[80vh] max-sm:h-[85vh] 
-        bg-white/15 backdrop-blur-lg p-4 rounded-xl border border-white/20 shadow-lg"
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={fadeInUp}
+      className="flex flex-col justify-center items-center w-full mt-12 max-w-4xl 
+      h-auto max-sm:h-auto bg-white/15 backdrop-blur-lg rounded-2xl border border-white/20 
+      shadow-xl p-8"
     >
       <div className="w-full h-[70%] max-sm:h-[80%] flex flex-col justify-center items-center">
         <div className="sm:hidden flex justify-center items-center rounded-full w-40 h-40 bg-white/15 backdrop-blur-lg border-white/20 shadow-lg">
@@ -53,7 +70,7 @@ const Home = () => {
       <p className="text-white text-2xl sm:mb-2">Follow Me</p>
       <Tab />
     
-    </div>
+    </motion.div>
   );
 };
 
