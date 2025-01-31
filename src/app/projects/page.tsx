@@ -18,8 +18,8 @@ const projects = [
     description:
       "A React Native app to manage college events with admin, faculty, and student roles.",
     techStack: ["React Native", "Firebase", "Expo"],
-    link: "https://play.google.com/store/apps/details?id=yourapp",
-    github: "https://github.com/yourgithub/event-management",
+    link: "https://event-mang-app.vercel.app/",
+    github: "https://github.com/Saadmehmood1234/eventMang",
   },
   {
     title: "Portfolio Website",
