@@ -6,12 +6,12 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 // Project Data
 const projects = [
   {
-    title: "E-Commerce Website",
+    title: "Timetable Management System",
     description:
-      "A full-stack MERN e-commerce platform with authentication, cart system, and Stripe payment integration.",
-    techStack: ["React", "Node.js", "MongoDB", "Tailwind"],
-    link: "https://your-ecommerce-site.com",
-    github: "https://github.com/yourgithub/ecommerce",
+      "A full-stack MERN  platform with authentication, cart system, and Stripe payment integration.",
+    techStack: [" Nextjs","React", "Node.js", "MongoDB", "Tailwind"],
+    link: "https://time-table-management-one.vercel.app/?course=BCA&sem=5",
+    github: "",
   },
   {
     title: "Event Management App",
