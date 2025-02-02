@@ -8,12 +8,14 @@ import About from "./about/page";
 import Education from "./education/page";
 import Projects from "./projects/page";
 import Contact from "./contact/page";
+
 const sectionVariants = {
   hidden: { opacity: 0, y: 80, scale: 0.95 },
   visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.7, ease: "easeOut" } },
 };
 
 const Main: React.FC = () => {
+  // Define sectionRefs with specific keys
   const sectionRefs = {
     home: useRef<HTMLDivElement | null>(null),
     education: useRef<HTMLDivElement | null>(null),
@@ -21,7 +23,9 @@ const Main: React.FC = () => {
     about: useRef<HTMLDivElement | null>(null),
     contact: useRef<HTMLDivElement | null>(null),
   };
-  const scrollToSection = (section: string) => {
+
+  // Fix type by ensuring only valid keys are used
+  const scrollToSection = (section: keyof typeof sectionRefs) => {
     const target = sectionRefs[section]?.current;
     if (target) {
       target.scrollIntoView({ behavior: "smooth", block: "start" });

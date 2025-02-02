@@ -3,7 +3,13 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 
-const WebNav = ({ scrollToSection }: { scrollToSection: (section: string) => void }) => {
+const WebNav = ({
+  scrollToSection,
+}: {
+  scrollToSection: (
+    section: "home" | "education" | "projects" | "about" | "contact"
+  ) => void;
+}) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
@@ -39,7 +45,7 @@ const WebNav = ({ scrollToSection }: { scrollToSection: (section: string) => voi
         </motion.div>
       </div>
       <div className="flex w-1/2 flex-col bg-transparent w px-4 gap-y-4 mt-6">
-        {["home", "education", "projects", "contact", "about"].map(
+        {(["home", "education", "projects", "contact", "about"] as const).map(
           (section, index) => (
             <motion.div
               key={section}
@@ -61,4 +67,3 @@ const WebNav = ({ scrollToSection }: { scrollToSection: (section: string) => voi
 };
 
 export default WebNav;
-

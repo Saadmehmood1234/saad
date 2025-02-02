@@ -1,11 +1,7 @@
 import React from "react";
 import { Home, GraduationCap, Folder, Mail, Info } from "lucide-react";
 
-const Nav = ({
-  scrollToSection,
-}: {
-  scrollToSection: (section: string) => void;
-}) => {
+const Nav =({ scrollToSection }: { scrollToSection: (section: "home" | "education" | "projects" | "about" | "contact") => void }) => {
   return (
     <div className="flex justify-between items-center p-2 w-full max-w-4xl rounded-xl sm:hidden bg-white/15 backdrop-blur-xl h-20">
       <ul className="flex justify-between items-center w-full text-white">
