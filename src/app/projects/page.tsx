@@ -7,24 +7,21 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 const projects = [
   {
     title: "Timetable Management System",
-    description:
-      "A full stack project using nextjs, mongodb,typescript.Efficiently manage and create timetable.",
+    description:"A full stack project using nextjs, mongodb,typescript.Efficiently manage and create timetable.",
     techStack: ["Nextjs", "Node.js", "MongoDB", "Tailwind","NextAuth","Typescript"],
     link: "https://your-ecommerce-site.com",
     github: "https://github.com/yourgithub/ecommerce",
   },
   {
     title: "Event Management App",
-    description:
-      "A full stack project using nextjs, mongodb,typescript.Efficiently manage and create timetable.",
+    description:"A full stack project using nextjs, mongodb,typescript.Efficiently manage and create timetable.",
       techStack: ["Nextjs", "Node.js", "MongoDB", "Tailwind","NextAuth","Typescript"],
     link: "https://play.google.com/store/apps/details?id=yourapp",
     github: "https://github.com/yourgithub/event-management",
   },
   {
     title: "Chat Application",
-    description:
-      "A chat application using reactjs,javascript.",
+    description:"A chat application using reactjs,javascript.",
     techStack: ["Next.js", "Tailwind", "Framer Motion"],
     link: "https://yourportfolio.com",
     github: "https://github.com/yourgithub/portfolio",
