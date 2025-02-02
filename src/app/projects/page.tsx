@@ -2,30 +2,51 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-
-// Project Data
 const projects = [
   {
     title: "Timetable Management System",
-    description:"A full stack project using nextjs, mongodb,typescript.Efficiently manage and create timetable.",
-    techStack: ["Nextjs", "Node.js", "MongoDB", "Tailwind","NextAuth","Typescript"],
-    link: "https://your-ecommerce-site.com",
-    github: "https://github.com/yourgithub/ecommerce",
+    description:
+      "A full stack project using nextjs, mongodb,typescript.Efficiently manage and create timetable.",
+    techStack: [
+      "Nextjs",
+      "Node.js",
+      "MongoDB",
+      "Tailwind",
+      "NextAuth",
+      "Typescript",
+    ],
+    link: "https://time-table-management-one.vercel.app/?course=BCA&sem=5",
+    github: "https://github.com/Saadmehmood1234/TimeTableManagement",
   },
   {
     title: "Event Management App",
-    description:"A full stack project using nextjs, mongodb,typescript.Efficiently manage and create timetable.",
-      techStack: ["Nextjs", "Node.js", "MongoDB", "Tailwind","NextAuth","Typescript"],
-    link: "https://play.google.com/store/apps/details?id=yourapp",
-    github: "https://github.com/yourgithub/event-management",
+    description:
+      "A full stack project using nextjs, mongodb,typescript.Efficiently manage and create timetable.",
+    techStack: [
+      "Nextjs",
+      "Node.js",
+      "MongoDB",
+      "Tailwind",
+      "NextAuth",
+      "Typescript",
+    ],
+    link: "https://event-mang-app.vercel.app/",
+    github: "https://github.com/Saadmehmood1234/EventMangApp",
   },
   {
     title: "Chat Application",
-    description:"A chat application using reactjs,javascript.",
-    techStack: ["Next.js", "Tailwind", "Framer Motion"],
-    link: "https://yourportfolio.com",
-    github: "https://github.com/yourgithub/portfolio",
+    description:"A chat application using reactjs,javascript.socket.io, mongodb, tailwind ",
+    techStack: ["reactjs","javascript","socketio","tailwind","mongodb"],
+    link: "https://chatapp-mqcy.onrender.com/",
+    github: "https://github.com/Saadmehmood1234/chatApp",
   },
+  // {
+  //   title: "Chat Application",
+  //   description:"A chat application using reactjs,javascript. socket.io mongodb tailwind ",
+  //   techStack: ["Next.js", "Tailwind", "Framer Motion"],
+  //   link: "https://chatapp-mqcy.onrender.com/",
+  //   github: "https://github.com/Saadmehmood1234/chatApp",
+  // },
 ];
 
 const cardVariants = {
@@ -44,7 +65,10 @@ const ProjectCard = ({ project, index }: { project: any; index: number }) => {
       initial="hidden"
       animate="visible"
       variants={cardVariants}
-      whileHover={{ scale: 1.05, boxShadow: "0px 8px 24px rgba(255, 255, 255, 0.2)" }}
+      whileHover={{
+        scale: 1.05,
+        boxShadow: "0px 8px 24px rgba(255, 255, 255, 0.2)",
+      }}
       whileTap={{ scale: 0.97 }}
       className="bg-white/10 backdrop-blur-lg border max-w-4xl border-white/20 rounded-xl shadow-lg p-6 flex flex-col gap-4 transition-all duration-300"
     >
@@ -60,7 +84,7 @@ const ProjectCard = ({ project, index }: { project: any; index: number }) => {
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.4, duration: 0.6 }}
-        className="text-gray-300"
+        className="text-gray-300 text-wrap"
       >
         {project.description}
       </motion.p>

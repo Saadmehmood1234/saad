@@ -15,7 +15,6 @@ const sectionVariants = {
 };
 
 const Main: React.FC = () => {
-  // Define sectionRefs with specific keys
   const sectionRefs = {
     home: useRef<HTMLDivElement | null>(null),
     education: useRef<HTMLDivElement | null>(null),
@@ -24,7 +23,6 @@ const Main: React.FC = () => {
     contact: useRef<HTMLDivElement | null>(null),
   };
 
-  // Fix type by ensuring only valid keys are used
   const scrollToSection = (section: keyof typeof sectionRefs) => {
     const target = sectionRefs[section]?.current;
     if (target) {
