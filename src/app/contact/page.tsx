@@ -18,7 +18,7 @@ const staggerContainer = {
 };
 const Contact = () => {
   return (
-    <motion.div
+    <motion.section
        initial="hidden"
        animate="visible"
        variants={fadeInUp}
@@ -92,7 +92,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
 

@@ -6,25 +6,25 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 // Project Data
 const projects = [
   {
-    title: "E-Commerce Website",
+    title: "Timetable Management System",
     description:
-      "A full-stack MERN e-commerce platform with authentication, cart system, and Stripe payment integration.",
-    techStack: ["React", "Node.js", "MongoDB", "Tailwind"],
+      "A full stack project using nextjs, mongodb,typescript.Efficiently manage and create timetable.",
+    techStack: ["Nextjs", "Node.js", "MongoDB", "Tailwind","NextAuth","Typescript"],
     link: "https://your-ecommerce-site.com",
     github: "https://github.com/yourgithub/ecommerce",
   },
   {
     title: "Event Management App",
     description:
-      "A React Native app to manage college events with admin, faculty, and student roles.",
-    techStack: ["React Native", "Firebase", "Expo"],
+      "A full stack project using nextjs, mongodb,typescript.Efficiently manage and create timetable.",
+      techStack: ["Nextjs", "Node.js", "MongoDB", "Tailwind","NextAuth","Typescript"],
     link: "https://play.google.com/store/apps/details?id=yourapp",
     github: "https://github.com/yourgithub/event-management",
   },
   {
-    title: "Portfolio Website",
+    title: "Chat Application",
     description:
-      "A personal portfolio built with Next.js, showcasing my skills, projects, and resume.",
+      "A chat application using reactjs,javascript.",
     techStack: ["Next.js", "Tailwind", "Framer Motion"],
     link: "https://yourportfolio.com",
     github: "https://github.com/yourgithub/portfolio",
@@ -42,14 +42,14 @@ const cardVariants = {
 
 const ProjectCard = ({ project, index }: { project: any; index: number }) => {
   return (
-    <motion.div
+    <motion.section
       custom={index}
       initial="hidden"
       animate="visible"
       variants={cardVariants}
       whileHover={{ scale: 1.05, boxShadow: "0px 8px 24px rgba(255, 255, 255, 0.2)" }}
       whileTap={{ scale: 0.97 }}
-      className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg p-6 flex flex-col gap-4 transition-all duration-300"
+      className="bg-white/10 backdrop-blur-lg border max-w-4xl border-white/20 rounded-xl shadow-lg p-6 flex flex-col gap-4 transition-all duration-300"
     >
       <motion.h2
         initial={{ opacity: 0, x: -30 }}
@@ -97,13 +97,13 @@ const ProjectCard = ({ project, index }: { project: any; index: number }) => {
           Code <FaGithub />
         </motion.a>
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
 
 const Projects = () => {
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -122,7 +122,7 @@ const Projects = () => {
           <ProjectCard key={index} project={project} index={index} />
         ))}
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
 

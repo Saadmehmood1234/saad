@@ -18,7 +18,7 @@ const staggerContainer = {
 
 const Education = () => {
   return (
-    <motion.div
+    <motion.section
     initial="hidden"
     animate="visible"
     variants={fadeInUp}
@@ -83,7 +83,7 @@ const Education = () => {
           </p>
         </motion.div>
       </motion.div>
-    </motion.div>
+    </motion.section>
   );
 };
 

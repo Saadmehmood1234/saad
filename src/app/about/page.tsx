@@ -18,13 +18,13 @@ const staggerContainer = {
 const About = () => {
   return (
     // <div className="w-full gap-x-4 max-sm:flex-col min-h-screen flex justify-center items-center bg-gradient-to-t from-blue-400 to-purple-600 p-6">
-    <motion.div
+    <motion.section
       initial="hidden"
       animate="visible"
       variants={fadeInUp}
       className="flex flex-col justify-center items-center w-full mt-12 max-w-4xl 
        h-auto max-sm:h-auto bg-white/15 backdrop-blur-lg rounded-2xl border border-white/20 
-       shadow-xl p-8"
+       shadow-xl p-4"
     >
       <motion.h1
         variants={fadeInUp}
@@ -46,7 +46,7 @@ const About = () => {
         </p>
       </div>
       <ProgressDemo />
-    </motion.div>
+    </motion.section>
 
     // </div>
   );
