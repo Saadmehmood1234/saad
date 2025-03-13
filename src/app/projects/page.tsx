@@ -15,7 +15,7 @@ const projects = [
       "NextAuth",
       "Typescript",
     ],
-    link: "https://time-table-management-one.vercel.app/?course=BCA&sem=5",
+    link: "https://time-table-management-jet.vercel.app/",
     github: "https://github.com/Saadmehmood1234/TimeTableManagement",
   },
   {
